@@ -1,8 +1,5 @@
 # Credit Card Fraud Detection System
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)
-
 ## Overview
 
 A comprehensive machine learning solution for detecting fraudulent credit card transactions in real-time. This project features a FastAPI backend and Streamlit frontend for seamless fraud detection.
@@ -17,58 +14,7 @@ A comprehensive machine learning solution for detecting fraudulent credit card t
 - **Batch Processing** - Process multiple transactions at once
 - **API Documentation** - Interactive Swagger UI and ReDoc
 
-## 📋 Prerequisites
 
-- Python 3.8 or higher
-- Docker & Docker Compose (optional)
-- pip package manager
-
-## 🚀 Quick Start
-
-### Using Docker Compose (Recommended)
-
-```bash
-docker-compose up --build
-```
-
-Access the application at:
-- Frontend: http://localhost:8501
-- Backend API: http://localhost:8000
-- API Docs: http://localhost:8000/docs
-
-### Local Installation
-
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/karanjeet9838/Fraud-Detection-API.git
-   cd Fraud-Detection-API
-   ```
-
-2. **Install Backend Dependencies**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   ```
-
-3. **Install Frontend Dependencies**
-   ```bash
-   cd frontend
-   pip install -r requirements.txt
-   ```
-
-4. **Run Services**
-
-   Backend (Terminal 1):
-   ```bash
-   cd backend
-   python app.py
-   ```
-
-   Frontend (Terminal 2):
-   ```bash
-   cd frontend
-   streamlit run app.py
-   ```
 
 ## 📁 Project Structure
 
@@ -156,14 +102,7 @@ curl -X POST "http://localhost:8000/predict/file" \
   -F "file=@transactions.csv"
 ```
 
-## 📚 Documentation
 
-Complete documentation is available in the `/README` folder:
-
-- [Installation Guide](./README/INSTALLATION.md) - Detailed setup instructions
-- [Usage Guide](./README/USAGE.md) - How to use the application
-- [API Documentation](./README/API_DOCUMENTATION.md) - Complete API reference
-- [Project Structure](./README/PROJECT_STRUCTURE.md) - Project organization
 
 ## 🤖 Model Details
 
@@ -246,36 +185,7 @@ docker-compose up --build
 - Model protection (serialized format)
 - Can integrate authentication (recommended for production)
 
-## 👥 Team
 
-**Zummit Africa AI/ML Team - Group 3**
-
-## 📄 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to:
-1. Fork the repository
-2. Create a feature branch
-3. Submit pull requests
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-- Open an issue in the repository
-- Check existing documentation in `/README` folder
-- Review API documentation at `/docs`
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with fraud detection model
-
----
-
-**Last Updated:** May 2026
 
 **GitHub Repository:** https://github.com/karanjeet9838/Fraud-Detection-API
 
-For more detailed information, see the documentation files in the [README](./README) folder.
